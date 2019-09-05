@@ -27,7 +27,7 @@ module.exports = function(config) {
    * @param {request} req
    * @param {response} res
    */
-  return async function(req, res) {
+  async function handler(req, res) {
     let path;
     try {
       const url = new URL(req.header('referer'));
@@ -91,5 +91,7 @@ module.exports = function(config) {
       res.status(500).end();
       console.log(e);
     }
-  };
+  }
+
+  return handler;
 };
