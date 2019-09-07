@@ -1,0 +1,12 @@
+{
+  "name": "functions",
+  "description": "Serverless Functions for ZEIT Now",
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ga-pageview": "github:ysc3839/ga-pageview#master"
+  },
+  "private": true
+}

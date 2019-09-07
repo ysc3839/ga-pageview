@@ -1,0 +1,13 @@
+{
+  "builds": [{
+    "src": "api/index.js",
+    "use": "@now/node",
+    "config": {
+      "includeFiles": ["api/YOUR_GOOGLE_CRED_FILE.json"],
+      "helpers": "false"
+    }
+  }],
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": "api/YOUR_GOOGLE_CRED_FILE.json"
+  }
+}
